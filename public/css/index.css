@@ -1,0 +1,243 @@
+.home-page-first {
+    display: grid;
+    grid-template-columns: repeat(5, 20vw);
+    grid-template-rows: repeat(16, 25vh);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100vw;
+}
+
+.main-view-content {
+    grid-area: 1 / 2 / 16 / 6;
+}
+
+.starting-page-view {
+    grid-area: 1 / 2 / 5 / 6;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    font-family: 'Carter One', cursive;
+    opacity: 1;
+    transition: opacity 0.4s linear;
+    word-spacing: .1rem;
+}
+
+.second-page-view {
+    grid-area: 5 / 2 / 9 / 6;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    font-family: 'Carter One', cursive;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+    word-spacing: .1rem;
+}
+
+.third-page-view {
+    grid-area: 9 / 2 / 13 / 6;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    font-family: 'Carter One', cursive;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+    word-spacing: .1rem;
+}
+
+.fourth-page-view {
+    grid-area: 13 / 2 / 17 / 6;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    font-family: 'Carter One', cursive;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+    word-spacing: .1rem;
+}
+
+.second-page-view h1,
+.third-page-view h1,
+.fourth-page-view h1 {
+    position: relative;
+    margin: 0.5vh;
+    font-size: 4rem;
+    color: #F6F930;
+    max-width: 95%;
+}
+
+.hello {
+    position: relative;
+    margin: 0.5vh;
+    font-size: 5rem;
+    max-width: 95%;
+    color: #F6F930;
+    animation: colorChange 10s 0.5s infinite normal;
+    animation-timing-function: linear;
+}
+
+.main-view-content h2 {
+    font-size: 3.5rem;
+    margin: 0;
+    max-width: 95%;
+}
+
+.second-page-view h2,
+.third-page-view h2,
+.fourth-page-view h2 {
+    font-size: 2rem;
+    margin: 0;
+    max-width: 95%;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #E53D00;
+    }
+
+    25% {
+        color: #F6F930;
+    }
+  
+    50% {
+        color: #FCFFF7;
+    }
+    
+    75% {
+        color: #21A0A0;
+    }
+
+    100% {
+        color: #046865;
+    }
+  }
+
+
+@media(max-width: 980px) {
+    .second-page-view h1,
+    .third-page-view h1,
+    .fourth-page-view h1 {
+        font-size: 40px;
+    }
+
+    .starting-page-view h1 {
+        font-size: 90px;
+    }
+
+    .starting-page-view h2 {
+        font-size: 30px;
+    }
+    
+    .second-page-view h2,
+    .third-page-view h2,
+    .fourth-page-view h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-height: 700px) {
+    .second-page-view h1,
+    .third-page-view h1,
+    .fourth-page-view h1 {
+        font-size: 40px;
+    }
+
+    .starting-page-view h1 {
+        font-size: 90px;
+    }
+
+    .starting-page-view h2 {
+        font-size: 30px;
+    }
+    
+    .second-page-view h2,
+    .third-page-view h2,
+    .fourth-page-view h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    .second-page-view h1,
+    .third-page-view h1,
+    .fourth-page-view h1 {
+        font-size: 45px;
+    }
+
+    .starting-page-view h1 {
+        font-size: 90px;
+    }
+
+    .starting-page-view h2 {
+        font-size: 30px;
+    }
+    
+    .second-page-view h2,
+    .third-page-view h2,
+    .fourth-page-view h2 {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 400px) {
+    .second-page-view h1,
+    .third-page-view h1,
+    .fourth-page-view h1 {
+        font-size: 30px;
+    }
+
+    .starting-page-view h1 {
+        font-size: 60px;
+    }
+
+    .starting-page-view h2 {
+        font-size: 20px;
+    }
+    
+    .second-page-view h2,
+    .third-page-view h2,
+    .fourth-page-view h2 {
+        font-size: 12px;
+    }
+}
+
+@media(max-height: 400px) {
+    .second-page-view h1,
+    .third-page-view h1,
+    .fourth-page-view h1 {
+        font-size: 30px;
+    }
+
+    .starting-page-view h1 {
+        font-size: 60px;
+    }
+
+    .starting-page-view h2 {
+        font-size: 20px;
+    }
+    
+    .second-page-view h2,
+    .third-page-view h2,
+    .fourth-page-view h2 {
+        font-size: 12px;
+    }
+}

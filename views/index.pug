@@ -1,0 +1,45 @@
+extends layouts/main-layout.pug
+block styles
+    link(rel="stylesheet", href="/css/index.css")
+block content
+    .home-page-first
+        .main-view-content
+            .starting-page-view
+                h1.hello Hello,
+                h2 I'm Momoh Nobert.<br>Full Stack Web Developer.<br>Based in Abuja, Nigeria.
+                h2 Currently working as a freelancer.<br>Available for web projects.
+            .second-page-view
+                h1 Career Objective
+                h2 Javascript Full Stack Developer with one(1) year of experience.<br>Web Developer with five(5) years of experience.
+                h2 My primary knowledge is in backend javascript development of simple business and commercial applications, portfolios, blog-sites and a range of other web services for my clients.<br> I have a degree in Computer Science.<br> This allows me approach my responsibilities with tested problem solving methodologies and provides a technical viewpoint to modern day algorithms and use case scenarios.<br> I'm also interested in Artificial Intelligence(AI) and Machine Learning.
+            .third-page-view
+                h1 Technical Skills
+                h2 Backend Developer: NodeJS with Express, Web Developer: Wordpress, HTML and CSS. Database Management: MongoDB with Mongoose. Languages: Javascript (advanced), HTML (advanced), CSS (advanced), Python (beginner) and Julia (beginner).
+                h1 Soft Skills
+                h2 Graphic Design: Adobe Illustrator and Adobe Photoshop. Languages: English. Resourceful, team player, leader, good communication and organization skills. Domain Driven Design Developer.
+            .fourth-page-view
+                h1 about-this-site
+                h2 A portfolio should be a mini showcase of your work/prowess.<br> I value minimalistic designs and I'm happy with how this turned out.<br> I'm not very versed with front-end frameworks so this was done with CSS, PUG(HTML templating engine) and a little JS scripting for that extra spice.
+                h1 what's next?
+                h2 It's not over yet!<br>I'm also a writer (I keep telling myself). So I've decided to put myself out there (I'll cherish any feedback).<br>Click on the pen for my blog.<br>The PC for my developer projects or the person icon if you're just interested in me.
+        .main-menu-content
+            .position-fixed-menu
+                a(href="/blog",class="blog")
+                    img(src='/images/writeicon.png' alt="blog" class="blog-img")
+                    h1 BLOG 
+                a(href="/projects",class="projects")
+                    img(src='/images/projectsicon.png' alt="projects" class="projects-img")
+                    h1 PROJECTS
+                a(href="/contact-me",class="contact-me")
+                    img(src='/images/contactme.png' alt="contact-me" class="about-me-img")
+                    h1 about me
+        .main-footer-content
+            .position-fixed-footer
+                a(href="https://twitter.com/nobert___" class="fa fa-twitter")
+                    h1 /Nobert___
+                a(href="https://www.linkedin.com/in/momohnobert" class="fa fa-linkedin")
+                    h1 /momohnobert
+                a(href="https://github.com/MomohNobert" class="fa fa-github")
+                    h1 /MomohNobert
+block end
+    script(src="/js/index.js")

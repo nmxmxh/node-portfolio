@@ -1,0 +1,20 @@
+extends layouts/main-layout.pug
+block styles
+    link(rel="stylesheet", href="/css/admin-login.css")
+block content
+    .parent
+        .form-div
+            .login-signup
+                div(id="login")
+                    h1 Hello, Okhai!
+                    form(action="/admin" method="POST")
+                        .login-input-row
+                            .field-wrap
+                                label.login-email-address Email Address<span class="req">*</span>
+                                input(class="login-email-input" type="email" name="email" required autocomplete="off")
+                            .field-wrap
+                                label.login-password Password<span class="req">*</span>
+                                input(class="login-password-input" type="password" name="password" required autocomplete="off")
+                            button(class="button button-block") Log In
+block end
+    script(src="/js/login.js")

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+
+body {
+  width: 100vw;
+  background: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 2.5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(65, 65, 65);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(246, 249, 48, 0.829);
+  border-radius: 10%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F6F930;
+}
+
+
+.home-page-first {
+    display: grid;
+    grid-template-columns: repeat(5, 20vw);
+    grid-template-rows: repeat(4, 25vh);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-menu-content {
+    grid-area: 1 / 1 / 3 / 2;
+    position: fixed;
+    left: 1.5%;
+    top: 15%;
+    padding-bottom: 30px;
+}
+
+
+.position-fixed-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-menu-content a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin: 2vh;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    outline: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.position-fixed-menu img {
+    width: 35px;
+    height: 35px;
+    padding: 1vh;
+    z-index: 1;
+}
+
+.position-fixed-menu  img:hover {
+    background-color: #0906cf;
+    filter: invert(100%);
+    border-radius: 50%; 
+}
+
+.position-fixed-menu h1 {
+    position: relative;
+    font-family: 'Carter One', cursive;
+    line-height: 1;
+    color: #F6F930;
+    margin: 0;
+    left: 25%;
+    display: none;
+}
+
+.position-fixed-menu img:hover + h1 {
+    display: block;
+    font-size: 1rem;
+}
+
+.main-footer-content {
+    grid-area: 3 / 1 / 5 / 2;
+    color: white;
+    position: fixed;
+    bottom: 5%;
+    left: 2.5%;
+}
+
+
+.position-fixed-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+
+.fa {
+    position: relative;
+    font-size: 1rem;
+    text-decoration: none;
+    left: 10%;
+    top: 20%;
+    padding: 1vh;
+    margin: auto;
+    margin: 1vh;
+    height: 15px;
+    width: 15px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.fa h1 {
+    position: relative;
+    font-family: 'Carter One', cursive;
+    color: #F6F930;
+    font-size: 1rem;
+    margin: 0;
+    margin-left: 1vw;
+    left: 100%;
+    bottom: 100%;
+    display: none;
+}
+
+.fa:hover {
+    border-radius: 50%;
+    background: #F6F930;
+    color: black;
+}
+
+.fa:hover > h1 {
+    display: block;
+}
+
+.fa-twitter {
+    background: none;
+    color: white;
+}
+
+.fa-github {
+    background: none;
+    color: white;
+}
+.fa-linkedin {
+    background: none;
+    color: white;
+}
+
+@media(max-width: 980px) {
+    .main-menu-content {
+        left: 0%;
+    }
+
+    .position-fixed-menu a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .position-fixed-menu img {
+        width: 30px;
+        height: 30px;
+        padding: 1vh;
+    }
+
+    .position-fixed-menu h1 {
+        position: relative;
+        font-family: 'Carter One', cursive;
+        line-height: 1;
+        color: white;
+        margin: 0;
+        margin-top: .5vh;
+        left: 0%;
+        font-size: .5rem;
+        display: block;
+    }
+
+    .position-fixed-menu img:hover + h1 {
+        color: #F6F930;
+        font-size: .5rem;
+    }
+
+    .fa:hover > h1 {
+        display: none;
+    }
+}
+
+@media(max-width: 600px) {
+    .main-menu-content {
+        left: 0%;
+    }
+}
+
+@media(max-height: 400px) {
+    .main-menu-content a {
+        margin: 0.5vh;
+    }
+
+    .fa {
+        position: relative;
+        font-size: 0.75rem;
+        text-decoration: none;
+        left: 10%;
+        top: 20%;
+        padding: 0.5vh;
+        margin: auto;
+        margin: 1vh;
+        height: 15px;
+        width: 15px;
+    }
+}

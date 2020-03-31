@@ -1,0 +1,28 @@
+extends layouts/main-layout.pug
+block styles
+    link(rel="stylesheet", href="/css/contact-me.css")
+block content
+    .home-page-first
+        .main-view-content
+            .position.fixed-headline        
+        .main-menu-content
+            .position-fixed-menu
+                a(href="/",class="home")
+                    img(src='/images/homeicon.png' alt="home" class="home-img")
+                    h1 HOME
+                br
+                br
+                a(href="/blog",class="blog")
+                    img(src='/images/writeicon.png' alt="blog" class="blog-img")
+                    h1 BLOG 
+                a(href="/projects",class="projects")
+                    img(src='/images/projectsicon.png' alt="projects" class="projects-img")
+                    h1 PROJECTS
+        .main-footer-content
+            .position-fixed-footer
+                a(href="https://twitter.com/nobert___" class="fa fa-twitter")
+                    h1 /Nobert___
+                a(href="https://www.linkedin.com/in/momohnobert" class="fa fa-linkedin")
+                    h1 /momohnobert
+                a(href="https://github.com/MomohNobert" class="fa fa-github")
+                    h1 /MomohNobert

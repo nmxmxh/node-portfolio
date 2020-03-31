@@ -1,0 +1,33 @@
+extends layouts/main-layout.pug
+block styles
+    link(rel="stylesheet", href="/css/admin.css")
+block content
+    .parent
+        .div1
+            h1 Create a New Post
+            form(action="/admin/create-a-post" method="POST")
+                .input-row
+                    .field-wrap
+                        label Title
+                        input(type="text" name="title" required)
+                    .field-wrap
+                        label Subject
+                        input(type="text" name="subject" required)
+                    .field-wrap
+                        label Author
+                        input(type="text" name="author" required)
+                    .field-wrap
+                        label Content
+                        textarea.content(name="content" required)
+                    .field-wrap-radio
+                        label.post-type Post Type
+                        <br>
+                        <br>
+                        label Projects
+                        input(type="radio" name="postType" value="projects" required)
+                        label Blog
+                        input(type="radio" name="postType" value="blog" required)
+                    .field-wrap
+                        label Thumbnail
+                        input(type="text" name="thumbnail" required)
+                    button(class="button button-block") Submit
